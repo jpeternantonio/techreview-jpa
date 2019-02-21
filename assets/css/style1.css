@@ -24,16 +24,16 @@
 
 .row {
   margin-right: 0px;
-}
+ }
 
 .col-md-12,
 .col-md-6 {
   padding-right: 0;
 }
 
-[class*=col-] {
+/*[class*=col-] {
   padding: 10px;
-}
+}*/
 
 .form-control-lg {
   border-left: 0;
@@ -1473,17 +1473,28 @@
 
 /*tablet media queries*/
 
-@media only screen and (min-width: 401px) and (max-width: 768px) {
+/*@media only screen and (min-width: 401px) and (max-width: 768px)*/ 
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+{
+
   body{
     padding: 0;
   }
 
-  .navbar-nav {
-    text-align: center;
+  #pr1 {
+    height: 250px;
+
   }
 
-  .img-fluid {
-    height: 350px;
+  .pr2 {
+    height: 250px;
+  }
+
+  .navbar-nav {
+    text-align: center;
   }
 
   .head {
@@ -1492,10 +1503,18 @@
     right: 21%;
   }
 
+
+
+  .head {
+    margin-left: 28px;
+    margin-top: 20px;
+
+  }
+
   .head2 {
     font-size: 120px;
-    top:5%;
-    right: 27%;
+     margin-left: -15px;
+       margin-top: 20px;
   }
 
   #vis {
@@ -1573,11 +1592,12 @@
 
   .contain {
     width: 360px;
+
   }
 
   .contain .box8 {
     margin-top: 5px;
-    height: 600px;
+    height: 500px;
     width: 370px;
     margin-left: -18px;
   }
@@ -1588,7 +1608,7 @@
   }
 
   #img4 {
-    height: 70vh;
+    height: 550px;
   }
 
   .swiper1-container {
@@ -1669,6 +1689,10 @@
   margin: auto;
 }
 
+#img3 {
+  height: 400px;
+}
+
 
 #ltop img { 
   width: 100vw;
@@ -1677,13 +1701,15 @@
 
 .contain .box9 {
     margin-top: 5px;
-    height: 500px;
+    height: 400px;
     width: 340px;
     margin-left: -10px;
     
   }
 
-
+#img4 {
+    height: 400px;
+  }
 
   .swiper2-container {
     left: 3%;
@@ -1703,8 +1729,19 @@
     left: 6.5%;
   }
 
-  #pr1 {
-  height: 160px;
+  .head {
+    margin-left: 28px;
+    top: -1%;
+
+  }
+
+  .head2 {
+    left: 40%;
+    top: -1%;
+  }
+
+  #pr1, .pr2 {
+  height: 250px;
   }
 
   #tabs4 img {
@@ -1736,7 +1773,7 @@
   }
 
   .contain .box8 {
-    height: 500px;
+    height: 400px;
     width: 400px;
   }
 
@@ -1751,10 +1788,14 @@
   /*laptop html*/
 
   .contain .box9 {
-    margin-top: 5px;
-    height: 520px;
+    margin-top: 25px;
+    height: 400px;
     width: 400px;
     
+  }
+
+  #img4 {
+    height: 400px;
   }
 
   .swiper2-container {
@@ -1778,6 +1819,15 @@
     height: 340px;
     width: 650px;
     /*margin-left: -20px;*/
+  }
+
+  .head {
+    margin-left: -30px;
+  }
+
+  .head2 {
+
+    margin-left: -40px;
   }
 
   .contain .box7 {
@@ -1805,6 +1855,7 @@
     
   }
 
+
   #diphone a {
     top: 87%; 
   }
@@ -1820,7 +1871,7 @@
 
   .contain .box9 {
     margin-top: 5px;
-    height: 520px;
+    height: 390px;
     width: 570px;
     
   }
@@ -1845,7 +1896,7 @@
 
 @media only screen and (max-width: 600px){
   #pr1 {
-  width: 450px;
+  width: 230px;
   }
 
   #img4 {
@@ -2335,6 +2386,16 @@
     font-size: 14px;
   }
 
+
+  #pr1 {
+  width: 300px;
+  height: 240px;
+}
+
+.pr2 {
+  width: 320px;
+}
+
   #sbox {
     width: 85%;
   }
@@ -2353,7 +2414,7 @@
   }
 
   .contain {
-    width: 340px;
+    width: 200px;
     margin-left: 4%;
   }
     .swiper1-container {
@@ -2440,11 +2501,12 @@
 }
 
 #head3 {
-  top: -30%;
+  margin-top: 15px;
 }
 
 #pr1 {
   width: 320px;
+  height: 240px;
 }
 
 .pr2 {
@@ -2485,18 +2547,19 @@
 
 
 
-/*.content {
-  width: 250px;
-}*/
-
 
 }
 
-/*pixel 2xl
-@media only screen and (max-width: 667px) and (orientation: landscape){
-.black-cont3 .clear .tom2 {
-  display: none;
-} */
+@media only screen and (max-width: 824px) and (orientation: landscape) {
+/*  #cont4 {
+  width: 200px;
+  height: 400px;
+}
+*/
+
+
+
+
 
 
 
@@ -2529,8 +2592,20 @@
   width: 300px;
   
 }
+
+/*@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+#cont4 {
+  width: 200px;
+  height: 400px;
 }
 
+
+}
+*/
 
 
 
